@@ -42,6 +42,12 @@ a:hover {
 
 .main-header {
     padding-top: 65px;
+    display: inline-flex;
+}
+
+.main-text {
+    width: 55%;
+    text-align: justify;
 }
 
 .name {
