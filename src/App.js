@@ -48,7 +48,7 @@ class App extends Component {
                 </nav>   */}
                 <div className="main-header">
                    <div className="my-picture">
-                        <img src={me} className="me" />
+                        <img src={me} className="me" alt="Gian Felipe"/>
                     </div>
                     <div className="main-text">
                         <h1> Hello ! </h1>
@@ -64,13 +64,13 @@ class App extends Component {
             <div className="footer">
                 <ul>
                 <li className="socialMedias">
-                    <a href="#" target="_blank"><i className="fa fa-envelope" aria-hidden="true"></i></a>
+                    <a href="mailto:gianfelipe93@gmail.com" target="_blank" rel="noopener noreferrer"><i className="fa fa-envelope-o" aria-hidden="true"></i> </a>
                     </li>
                 <li className="socialMedias">
-                    <a href="http://www.linkedin.com/in/gianfelipe" target="_blank"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    <a href="http://www.linkedin.com/in/gianfelipe" target="_blank" rel="noopener noreferrer"><i className="fa fa-linkedin" aria-hidden="true"></i> </a>
                     </li>
                 <li className="socialMedias">
-                    <a href="https://github.com/gianfelipe93" target="_blank"><i className="fa fa-github-square" aria-hidden="true"></i></a>
+                    <a href="https://github.com/gianfelipe93" target="_blank" rel="noopener noreferrer"><i className="fa fa-github" aria-hidden="true"></i> </a>
                     </li>
                 </ul>
             </div>

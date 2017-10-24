@@ -136,7 +136,7 @@ ul {
 }
 
 .language {
-    margin-top: 8%;
+    margin-top: 12%;
 }
 
 .socialMedias{
@@ -159,15 +159,14 @@ ul {
     h1 {
         display: block;
     }
+    .footer{
+        position: relative;
+    }
 }
 
 @media screen and (min-height: 600px){
     .language {
         margin-top: 15%;
-    }
-
-    h1 {
-        display: block;
     }
 }
 
@@ -176,6 +175,27 @@ ul {
         display: none;
     }
 }
+
+@media screen and (min-height: 563px) {
+    .footer {
+        position: absolute;
+    }
+}
+
+@media screen and (min-height: 486px) and (max-height: 545px) {
+    h1 {
+        margin-top: 2%;
+    }
+}
+
+
+@media screen and (max-height: 472px) {
+    .footer {
+        display: none;
+    }
+}
+
+
 
 @keyframes App-logo-spin {
     from {
