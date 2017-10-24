@@ -182,14 +182,23 @@ ul {
     }
 }
 
-@media screen and (min-height: 486px) and (max-height: 545px) {
+@media screen and (min-height: 486px) and (max-height: 555px) {
     h1 {
         margin-top: 2%;
+        margin-bottom: 2%;
+    }
+
+    .language {
+        margin-top: 5%;
+    }
+
+    .footer {
+        position: absolute;
     }
 }
 
 
-@media screen and (max-height: 472px) {
+@media screen and (max-height: 465px) {
     .footer {
         display: none;
     }
