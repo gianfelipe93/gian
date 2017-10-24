@@ -1,23 +1,52 @@
-ul {
-    list-style-type: none;
+nav {
+    width: 200px;
+    height: 100%;
+    position: absolute;
+    transform: translate(-350px, 0);
+    transition: transform 0.5s ease;
+    background-color: white
+}
+
+nav.open {
+    transform: translate(0, 0);
+    margin: 0px;
+    padding: 0px;
+}
+
+.headerMenu {
     display: inline-block;
-    float: right;
-    padding: 4%;
+    position: absolute;
+    right: 0;
+    padding: 1%;
+    margin-right: 6%;
+}
+
+.headerMenu svg {
+    width: 32px;
+    fill: #E0E0E0;
+}
+
+ul {
+    list-style: none;
+    padding-left: 1%;
+    color: gray;
+}
+
+.firstMenu {
+    border-top: 1px solid black;
+}
+
+.fixed-header {
+    position: fixed;
+    top: 0;
+    left: 0;
     width: 100%;
 }
 
-ul li {
-    display: block;
-    position: relative;
-    float: left;
-    text-align: center;
-    margin: 4%;
-}
-
 a:link {
-  color: #595959;
-  text-decoration: none;
-  font-size: 20px;
+    color: #595959;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 a:hover {
@@ -26,55 +55,104 @@ a:hover {
 }
 
 .App {
-  text-align: center;
+    text-align: center;
+}
+
+span {
+    font-size: 35px;
 }
 
 .App-header {
-  height: 10%;
-  padding: 5px;
-  color: #595959;
-  border-bottom-style: inset;
+    padding: 2px;
+    color: #595959;
+    border-bottom-style: inset;
 }
 
 .main {
     width: 100%;
-}
-
-.main-header {
-    padding-top: 65px;
-    display: inline-flex;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .main-text {
-    width: 55%;
-    text-align: justify;
+    width: 100%;
+    text-align: center;
 }
 
 .name {
-    display: inline-flex;
-    font-size: 25px;
-    width: 69%;
     text-align: left;
-    margin-left: 1%;
+    padding: 16px;
+    margin-left: 3%;
+    width: 75%;
 }
 
 .my-picture {
-    width: 40%;
-    height: 100%;
+    width: 100%;
 }
 
 .me {
-    border-radius: 50%;
-    width:80%;
-    text-align: left
+    /* border-radius: 50%; */
+    width: 100%;
 }
 
 .menu {
     float: right;
-    width:30%;
+    width: 30%;
+}
+
+h1 {
+    font-family: futura-pt;
+    font-size: 51px;
+    font-weight: bold;
+    font-style: normal;
+    text-transform: none;
+    letter-spacing: -.02em;
+    line-height: 1em;
+    color: #333;
+}
+
+li {
+    background-color: transparent;
+    color: #333;
+    border: 2px solid #333;
+    padding-right: calc(1.44em - .14em);
+    padding-bottom: 1em;
+    padding-left: 1.44em;
+    padding-top: 1em;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: .14em;
+    font-weight: 700;
+    font-style: normal;
+    list-style-position: inside;
+}
+
+.footer {
+    border-style: none;
+}
+
+ul {
+    margin: 0 auto;
+    display: inline-flex;
+}
+
+.language {
+    margin-top: 8%;
+}
+
+.englishButton {
+    margin-right: 5px;
+}
+
+.portugueseButton {
+    margin-left: 5px;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }
