@@ -1,48 +1,79 @@
 import React, { Component } from 'react';
-import logo from './logo.png';
+//import logo from './logo.png';
 import me from './me.jpg';
 import './App.css';
 
 class App extends Component {
+    componentDidMount() {  
+        // var menu = document.querySelector('#menu')
+        // var main = document.querySelector('.main')
+        // var drawer = document.querySelector('#drawer')
+  
+        // menu.addEventListener('click', function (e) {
+        //     drawer.classList.toggle('open')
+        //     e.stopPropagation()
+        // })
+        // main.addEventListener('click', function () {
+        //     drawer.classList.remove('open')
+        // })
+     
+    }
+
     render() {
         return (
-            <div className="App">
-                <div className="App-header">
-                    <div className="name">
-                        <img src={logo} />
-            <h1>GIAN FELIPE</h1> 
-        </div>  
-        <div className="menu">
-            <ul>
-                <li><a href="#">Home</a></li>
-            <li><a href="#">Portfolio</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#">Contact</a></li>
-            </ul>
-            </div>
-            </div>
-            <div  className="main">
+            <div className="App">            
+            {/* <div className="App-header">
+                <div className="name">                    
+                    <span>Gian Felipe</span>
+                     <a className="headerMenu" id="menu" href="#">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
+                        <path d="M2 6h20v3H2zm0 5h20v3H2zm0 5h20v3H2z"></path>
+                    </svg>
+                </a>                
+                </div>
+            </div> */}
+            <div className="main">
+            {/* <nav id="drawer" className="nav">
+                    <ul>
+                        <li className="firstMenu">
+                            <a href="#"><i className="fa fa-home" aria-hidden="true"></i> Home</a>
+                        </li>
+                        <li>
+                            <a href="#"><i className="fa fa-briefcase" aria-hidden="true"></i> Resume</a>
+                        </li>
+                        <li>
+                            <a href="#"> <i className="fa fa-phone" aria-hidden="true"></i> Contact</a>
+                        </li>
+                    </ul>
+                </nav>   */}
                 <div className="main-header">
-                    <div className="my-picture">
-                        <img src={me} className="me"/>
+                   <div className="my-picture">
+                        <img src={me} className="me" />
+                    </div>
+                    <div className="main-text">
+                        <div className="language">
+                        <ul>
+                            <li className="englishButton">English</li>
+                            <li className="portugueseButton">Português</li>
+                        </ul>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div className="main-text">
-                <h4>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id turpis vitae massa efficitur sodales.</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc id turpis vitae massa efficitur sodales. Donec faucibus sapien tortor, et imperdiet risus iaculis eget. Proin volutpat ex in enim dictum, at molestie est finibus. Phasellus eu luctus justo, vel facilisis lectus. Sed in tortor et urna pulvinar tincidunt. Curabitur aliquet ac purus sit amet convallis. Aenean feugiat diam odio, quis egestas velit accumsan ut. Quisque non pulvinar turpis. In a eleifend ante.
-                </p>
-            <p>
-                Suspendisse convallis, nulla ut sodales interdum, elit tellus bibendum tellus, sollicitudin efficitur metus dui a dui. Pellentesque consectetur accumsan est, fermentum consequat turpis condimentum tempus. Fusce tempus vestibulum dui ac vehicula. Curabitur porttitor blandit ipsum sit amet porttitor. Sed pellentesque ornare purus sed ornare. In non volutpat orci. Quisque at urna sed elit dignissim interdum. Morbi volutpat purus a diam faucibus, a lobortis nisl accumsan. Aliquam at dapibus est. Duis quis tortor sed arcu fringilla ultrices at eu tellus. Vivamus pulvinar ullamcorper tincidunt. Cras aliquam eleifend quam eu facilisis. 
-            </p>
-            <p>
-                Suspendisse convallis, nulla ut sodales interdum, elit tellus bibendum tellus, sollicitudin efficitur metus dui a dui. Pellentesque consectetur accumsan est, fermentum consequat turpis condimentum tempus. Fusce tempus vestibulum dui ac vehicula. Curabitur porttitor blandit ipsum sit amet porttitor. Sed pellentesque ornare purus sed ornare. In non volutpat orci. Quisque at urna sed elit dignissim interdum. Morbi volutpat purus a diam faucibus, a lobortis nisl accumsan. Aliquam at dapibus est. Duis quis tortor sed arcu fringilla ultrices at eu tellus. Vivamus pulvinar ullamcorper tincidunt. Cras aliquam eleifend quam eu facilisis. 
-            </p>
-            <p>
-                Suspendisse convallis, nulla ut sodales interdum, elit tellus bibendum tellus, sollicitudin efficitur metus dui a dui. Pellentesque consectetur accumsan est, fermentum consequat turpis condimentum tempus. Fusce tempus vestibulum dui ac vehicula. Curabitur porttitor blandit ipsum sit amet porttitor. Sed pellentesque ornare purus sed ornare. In non volutpat orci. Quisque at urna sed elit dignissim interdum. Morbi volutpat purus a diam faucibus, a lobortis nisl accumsan. Aliquam at dapibus est. Duis quis tortor sed arcu fringilla ultrices at eu tellus. Vivamus pulvinar ullamcorper tincidunt. Cras aliquam eleifend quam eu facilisis. 
-            </p>
+            <div className="footer">
+                <ul>
+                <li>
+                    <a href="#"><i className="fa fa-envelope" aria-hidden="true"></i></a>
+                    </li>
+                <li>
+                    <a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                    </li>
+                <li>
+                    <a href="#"><i className="fa fa-github-square" aria-hidden="true"></i></a>
+                    </li>
+                </ul>
             </div>
-            </div>
-            </div>
-            </div>
+        </div>
         );
     }
 }
