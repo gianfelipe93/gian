@@ -51,6 +51,7 @@ class App extends Component {
                         <img src={me} className="me" />
                     </div>
                     <div className="main-text">
+                        <h1> Hello ! </h1>
                         <div className="language">
                         <ul>
                             <li className="englishButton">English</li>
@@ -62,14 +63,14 @@ class App extends Component {
             </div>
             <div className="footer">
                 <ul>
-                <li>
-                    <a href="#"><i className="fa fa-envelope" aria-hidden="true"></i></a>
+                <li className="socialMedias">
+                    <a href="#" target="_blank"><i className="fa fa-envelope" aria-hidden="true"></i></a>
                     </li>
-                <li>
-                    <a href="#"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
+                <li className="socialMedias">
+                    <a href="http://www.linkedin.com/in/gianfelipe" target="_blank"><i className="fa fa-linkedin-square" aria-hidden="true"></i></a>
                     </li>
-                <li>
-                    <a href="#"><i className="fa fa-github-square" aria-hidden="true"></i></a>
+                <li className="socialMedias">
+                    <a href="https://github.com/gianfelipe93" target="_blank"><i className="fa fa-github-square" aria-hidden="true"></i></a>
                     </li>
                 </ul>
             </div>

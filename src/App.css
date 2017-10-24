@@ -43,15 +43,8 @@ ul {
     width: 100%;
 }
 
-a:link {
-    color: #595959;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-a:hover {
-    color: #999999;
-    text-decoration: underline;
+a {
+    color: #333;
 }
 
 .App {
@@ -109,6 +102,7 @@ h1 {
     letter-spacing: -.02em;
     line-height: 1em;
     color: #333;
+    display: none;
 }
 
 li {
@@ -128,8 +122,13 @@ li {
 }
 
 .footer {
-    border-style: none;
-}
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 0.1rem;
+    text-align: center;
+  }
 
 ul {
     margin: 0 auto;
@@ -140,12 +139,42 @@ ul {
     margin-top: 8%;
 }
 
+.socialMedias{
+    border-style: none;
+}
+
 .englishButton {
     margin-right: 5px;
 }
 
 .portugueseButton {
     margin-left: 5px;
+}
+
+@media screen and (min-height: 485px){
+    .language {
+        margin-top: 10%;
+    }
+
+    h1 {
+        display: block;
+    }
+}
+
+@media screen and (min-height: 600px){
+    .language {
+        margin-top: 15%;
+    }
+
+    h1 {
+        display: block;
+    }
+}
+
+@media screen and (max-height: 375px) {
+    .footer {
+        display: none;
+    }
 }
 
 @keyframes App-logo-spin {
